@@ -13,18 +13,19 @@ class GardenGnome
     return "GNARLY!!!"
   end
   
-  attr_reader :name
-  attr_writer :name
-  attr_reader :age 
-  attr_writer :age
-  attr_reader :gluten_allergy
-  attr_writer :gluten_allergy
-  attr_reader :personality
-  attr_reader :hat_color
-  attr_writer :hat_color
+  attr_reader :name, :age, :gluten_allergy,  :personality, :hat_color
+  attr_writer :name, :age, :gluten_allergy, :hat_color
   
   def introduce_self
     return "Hello humans, my name is #{name}, I am #{age} years old, and you'll rue the day you crossed me!"
   end
 end 
+
+gnome_1=GardenGnome.new 
+gnome_2=GardenGnome.new
+gnome_2.name("Walter the Worst")
+gnome_3=GardenGnome.new
+gnome_3.name("James the Jerk")
+gnome_3.age("3421")
+gnome_4
 
